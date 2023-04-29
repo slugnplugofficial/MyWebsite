@@ -1,382 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>SLUG AND PLUG Rewrite</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800;&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg py-3 py-lg-3 navbar-light navbar-fixed-top" >
-         <img id = "logo" src="images/logo.png" alt="">
-         <!-- hidden on mobile -->
-         <a class="navbar-brand d-none d-md-block pl-2" style="font-size: 1.5625rem;" href="#">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>SLUG AND PLUG Rewrite</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;&display=swap"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <nav class="navbar navbar-expand-lg py-3 py-lg-3 navbar-light navbar-fixed-top">
+      <img id="logo" src="images/logo.png" alt="">
+      <!-- hidden on mobile -->
+      <a class="navbar-brand d-none d-md-block pl-2" style="font-size: 1.5625rem;" href="#">
          <span>SLUG AND PLUG</span>
-         </a>
-         <!-- hidden on desktop -->
-         <a class="navbar-brand d-md-none" href="#Home">
+      </a>
+      <!-- hidden on desktop -->
+      <a class="navbar-brand d-md-none" href="#Home">
          <span>SLUG AND PLUG</span>
-         </a>
-         <button id="nav-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      <button id="nav-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav">
-            <ul class="navbar-nav">
-               <li class="nav-item">
-                  <a class="nav-link" href="#team">Our Team</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#Home">About Us</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#Reach">Contact Us</a>
-               </li>
-            </ul>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#Reach">Contact Us</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <section id="Home" style="min-height: fit-content;">
+      <div class="d-flex justify-content-center align-items-center mt-md-5">
+         <img src="images/home_logo.png" class="d-none d-md-block" alt="Logo" width="281px" height="281px">
+      </div>
+      <div class="text-center mt-4 mt-md-5 moto"
+         style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; text-transform: uppercase;">
+         <div class="d-none d-md-block" style="font-size: 3.5vw;">
+            <!-- hidden on mobile  -->
+            Ideate, Inovate <span class="gradient">and Improve</span>
          </div>
-      </nav>
-      <section>
-         <div class="d-flex justify-content-center align-items-center mt-4 mt-md-5">
-            <img src="images/home_logo.png" alt="Logo" width="281px" height="281px">
+         <div class="d-md-none" style="font-size: 15vw;">
+            <!-- hidden on desktop  -->
+            Ideate<br>Inovate<span class="gradient"><br>Improve</span>
+
          </div>
-         <div class="text-center mt-4 mt-md-5 moto" style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; text-transform: uppercase;">
-            <div class="d-none d-md-block" style="font-size: 3.5vw;">
+      </div>
+      <div class="text-center mt-5"
+         style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; text-transform: uppercase;">
+         <div class="d-none d-md-block" style="font-size: 1.1vw; color: #7E7C6A; ">
+            <!-- hidden on mobile -->
+            Our platform is dedicated to providing you with the latest information, knowledge and hands-on <br>
+            experience you need to succeed in today's ever-changing technology industry. Whether you are <br>
+            a professional, or just someone who loves to stay up-to-date on the latest tech trends, <br>
+            our website has something for everyone.
+
+            <div class="row">
+               <div class="col-1"></div>
+               <div class="col-10">
+                  <div>
+                     <button
+                        onclick=" location.href='https://docs.google.com/forms/d/e/1FAIpQLSdb9Gq4tni6xwpcbkwobHkVmYuALMp_G-liYBcgxXvoZOBzIg/viewform'"
+                        type="button" class="snp-button mx-auto mt-5 mb-5 ">JOIN US!!!</button>
+
+
+                  </div>
+               </div>
+               <div class="col-1"></div>
+            </div>
+
+         </div>
+         <div class="d-md-none " style="font-size: 20px; color: #09AA97;">
+            <!-- hidden on desktop -->
+
+            <div class="row">
+               <div class="col-1"></div>
+               <div class="col-10">
+                  dedicated platform TO provide YOU with the <span style="color: #000;"> latest </span> information and
+                  hands-on experience you need to succeed in today's ever-changing <span style="color: #000;">
+                     technology
+                  </span> industry
+               </div>
+               <div class="col-1"></div>
+            </div>
+
+            <div class="row">
+               <div class="col-1"></div>
+               <div class="col-10">
+                  <div>
+                     <button
+                        onclick=" location.href='https://docs.google.com/forms/d/e/1FAIpQLSdb9Gq4tni6xwpcbkwobHkVmYuALMp_G-liYBcgxXvoZOBzIg/viewform'"
+                        type="button" class="snp-button mx-auto mt-5 mb-5"
+                        style="width: 247px; height: 75px; font-size: 32px;">JOIN US!!!</button>
+                  </div>
+               </div>
+               <div class="col-1"></div>
+            </div>
+
+            <!-- dedicated platform  TO provide YOU with the <span style="color: #000;"> latest </span> information  and  hands-on experience you need to succeed in today's ever-changing technology  industry -->
+
+         </div>
+
+      </div>
+   </section>
+
+
+   <section id="about" style="border-top:1px solid black; border-bottom:1px solid black;">
+      <div class="row mt-5" style="bottom: 1px black;">
+         <div class="col-md-2 d-none d-md-block Border-bottom">
+            <img src="images/Ellipse.png" style="  transform: scaleX(-1);" class=" img-fluid mb-5" alt="" srcset="">
+         </div>
+         <div class="col-md-8 text-center Border-bottom" id="collab">
+            <div class="d-none d-md-block mb-4" style="font-size: 1.5vw;">
+               <!-- hidden on mobile -->
+               Yes, we are colloborating
+               <div class="text-center mt-5" style="font-size: 4vw; font-weight: 800;">
+                  <span class="snp"> SLUGNPLUG </span>
+                  <span style="font-size: 3.125rem;"> x </span>
+                  <span style="color: rgb(17, 27, 80);">TECH</span>
+                  <span style="color: rgb(182, 40, 40);">GIG</span>
+               </div>
+              <a href="https://www.techgig.com/home">
+               <button class="KnowMoreAboutTechGig-padding KnowMoreAboutTechGig mt-4">KNOW MORE ABOUT TECHGIG</button>
+              </a>
+            </div>
+            <div class="d-md-none">
+               <!-- hidden on desktop -->
+               <span style="font-weight: 700; font-size: 35px;"> Yes!</span><br>
+               <span style="font-weight: 700; font-size: 25px;"> we are colloborating</span>
+               <div class="text-center mt-1" style="font-size: 15vw; font-weight: 800;">
+                  <span class="snp"> SNP </span> <br>
+                  <span style="font-size: 4rem;"> x </span><br>
+                  <img src="images/TechGig.png" class="img-fluid float-none" alt="">
+               </div>
+
+
+
+               <div class="container">
+                  <a href="https://www.techgig.com/home">
+                  <button class="KnowMoreAboutTechGig mt-4" style="width: 320px; height: 3.5rem; font-size: 13px;">KNOW
+                     MORE ABOUT TECHGIG</button></a>
+
+               </div>
+
+            </div>
+         </div>
+         <div class="col-md-2 d-none d-md-block Border-bottom">
+            <img src="images/Ellipse.png" class=" img-fluid float-right mb-5" alt="" srcset="">
+         </div>
+         <div class=" pl-5 col-md-6 col-12 Border-right" id="collest" style="background-color: #ffc5c5;">
+            <div class="d-none d-md-block" style="font-size: 3.5vw; font-weight: 600;">
                <!-- hidden on mobile  -->
-               Ideate, Inovate <span class="gradient">and Improve</span>
+               <div class="cool mt-3">
+                  <p>
+                     WE
+                  </p>
+                  <P>
+                     CALL
+                  </P>
+                  <P>
+                     OURSELVERS
+                  </P>
+                  <p class="snp">
+                     THE COOLEST
+                  </p>
+                  <p>
+                     CLUB IN SRMRMP
+                  </p>
+               </div>
+               <div class="ml-2"
+                  style="color: #7E7C6A;font-size: 1.375rem ; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; text-transform: uppercase;">
+                  <p class="mt-5">
+                     SlugNPlug is an amazing college club that offers a <br>
+                     tight-knit community, unique events, and a diverse <br>
+                     membership. With activities ranging from Fun with Data<br>
+                     analytics to Formula AI to MindWrap, there's always<br>
+                     something exciting happening. Plus, the club is run by<br>
+                     students, so events are tailored to members' interests.
+                  </p>
+                  <p class="mt-5 mb-3">
+                     Join SlugNPlug to make lifelong friends and <br>
+                     unforgettable memories!
+                  </p>
+               </div>
             </div>
             <div class="d-md-none" style="font-size: 5vw;">
                <!-- hidden on desktop  -->
-               Ideate, Inovate <span class="gradient">and Improve</span>
-            </div>
-         </div>
-         <div class="text-center mt-5" style="color: #7E7C6A; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; text-transform: uppercase;">
-            <div class="d-none d-md-block" style="font-size: 1.2vw;">
-               <!-- hidden on mobile -->
-               There are many variations of passages of Lorem Ipsum available, but<br>
-               the majority have suffered alteration in some form, by injected humour,<br>
-               or randomised words which don't look even slightly believable.<br>
-               If you are going to use a
-            </div>
-            <div class="d-md-none" style="font-size: 3.5vw;">
-               <!-- hidden on desktop -->
-               There are many variations of passages of Lorem Ipsum available, but<br>
-               the majority have suffered alteration in some form, by injected humour,<br>
-               or randomised words which don't look even slightly believable.<br>
-               If you are going to use a
-            </div>
-            <div>
-               <button class="mt-2 mt-md-5" id="join">JOIN US!!!</button>
-            </div>
-         </div>
-      </section>
+               <div class="cool-mobile mt-3">
+                  <p>
+                     WE
+                  </p>
+                  <P>
+                     CALL
+                  </P>
+                  <P>
+                     OURSELVERS
+                  </P>
+                  <p class="snp">
+                     THE COOLEST
+                  </p>
+                  <p>
+                     CLUB IN SRMRMP
+                  </p>
+               </div>
+               <div class="ml-1"
+                  style="color: #020202;font-size: 4vw ; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; text-transform: uppercase;">
+                  <div class="row">
+                     <div class="col-11">
+                        <p class="mt-3" style="color: #333333; font-weight: 400;">
+                           SlugNPlug is an amazing college club<br>
+                           that offers a tight-knit community,<br>
+                           unique events, and a diverse<br>
+                           membership. With activities ranging<br>
+                           from Fun with Data analytics to<br>
+                           Formula AI to MindWrap, there's always<br>
+                           something exciting happening. Plus, <br>
+                           the club is run by students,<br>
+                           so events are tailored to members' interests.
+                        </p>
+                        <p class="mt-3 mb-3">
+                           Join SlugNPlug to make<br>
+                           lifelong friends and<br>
+                           unforgettable<br>
+                           memories!
+                        </p>
 
+                     </div>
+                     <div class="col-1"></div>
+                  </div>
 
-      <section id="Home" style="border-top:1px solid black; border-bottom:1px solid black;">
-         <div class="row mt-5" style="bottom: 1px black;">
-            <div class="col-md-2 d-none d-md-block Border-bottom">
-               <img src="images/Ellipse.png" style="  transform: scaleX(-1);" class=" img-fluid mb-2" alt="" srcset="">
-            </div>
-            <div class="col-md-8 text-center Border-bottom" id="collab">
-               <div class="d-none d-md-block mb-4" style="font-size: 1.5vw;">
-                  <!-- hidden on mobile -->
-                  Yes, we are colloborating with
-                  <div class="text-center mt-5" style="font-size: 4vw;">
-                     <span class="snp"> SLUGNPLUG </span>
-                     <span style="font-size: 3.125rem;"> x </span>
-                     <span style="color: rgb(17, 27, 80);">TECH</span>
-                     <span style="color: rgb(182, 40, 40);">GIG</span>
-                  </div>
-                  <button class="btn1 mt-4">KNOW MORE ABOUT TECHGIG</button>
-               </div>
-               <div class="d-md-none" style="font-size: 5vw;">
-                  <!-- hidden on desktop -->
-                  Yes, we are colloborating with
-                  <div class="text-center mt-5" style="font-size: 7.0vw; font-weight: 800;">
-                     <span class="snp"> SLUGNPLUG </span>
-                     <span style="font-size: 1.375rem;"> x </span>
-                     <span style="color: #2A477A">TECH</span>
-                     <span style="color: #DD1B21">GIG</span>
-                  </div>
-                  <button class="btn1 mt-4" style="width: 12.5rem; height: 5rem; font-size: 3vw;">KNOW MORE ABOUT TECHGIG</button>
-               </div>
-            </div>
-            <div class="col-md-2 d-none d-md-block Border-bottom">
-               <img src="images/Ellipse.png" class=" img-fluid float-right mb-2" alt="" srcset="">
-            </div>
-            <div class=" pl-5 col-md-6 col-12 Border-right">
-               <div class="d-none d-md-block" style="font-size: 3.5vw; font-weight: 600;">
-                  <!-- hidden on mobile  -->
-                  <div class="cool">
-                     <p>
-                        WE
-                     </p>
-                     <P>
-                        CALL
-                     </P>
-                     <P class="snp">
-                        OURSELVERS
-                     </P>
-                     <p>
-                        THE COOLEST
-                     </p>
-                     <p>
-                        CLUB IN SRMRMP
-                     </p>
-                  </div>
-                  <div style="color: #7E7C6A;font-size: 1.375rem ; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; text-transform: uppercase;">
-                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but the<br> 
-                        majority have sufferedalteration in some form, by injected humour, or<br>
-                        randomised words which don't look even slightly believable.<br>
-                        If you are going to use a<br>
-                     </p>
-                  </div>
-               </div>
-               <div class="d-md-none" style="font-size: 5vw;">
-                  <!-- hidden on desktop  -->
-                  <div class="cool-mobile">
-                     <p>
-                        WE
-                     </p>
-                     <P>
-                        CALL
-                     </P>
-                     <P class="snp">
-                        OURSELVERS
-                     </P>
-                     <p>
-                        THE COOLEST
-                     </p>
-                     <p>
-                        CLUB IN SRMRMP
-                     </p>
-                  </div>
-                  <div style="color: #7E7C6A;font-size: 0.9375rem ; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; text-transform: uppercase;">
-                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but the<br> 
-                        majority have sufferedalteration in some form, by injected humour, or<br>
-                        randomised words which don't look even slightly believable.<br>
-                        If you are going to use a<br>
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-6 d-none d-md-block gradient-collab">
-               <!-- Gradient  -->
-               <div class="" style="height: 50vh;">
                </div>
             </div>
          </div>
+         <div class="col-md-6 d-none d-md-block gradient-collab">
+            <!-- Gradient  -->
+            <div class="" style="height: 50vh;">
+            </div>
          </div>
-         <!-- <hr class="mt-5"> -->
-      </section>
+      </div>
+      <!-- <hr class="mt-5"> -->
+   </section>
 
-      <section id="seniors" style="height: 100vh; border-bottom: 1px solid black; background-color: black;">
+   <section id="seniors" style="height: 100vh; border-bottom: 1px solid black; background-color: black;">
 
-         <!-- IF YOU ARE UPDATING THIS PLEASE TAKE YOUR TIME
+      <!-- IF YOU ARE UPDATING THIS PLEASE TAKE YOUR TIME
             I HAD A MIND BENDING MOMENT PULLING THIS OFF !!!
          
          -->
 
 
-         <div class="d-none d-md-block">
-            <!-- hidden on mobile  -->
-            <h1 class="text-center senior-meet mt-3" style="font-size: 5rem;">MEET OUR SENIORS</h1>
-               <div class="swiper mySwiper" style="height: 80vh;">
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide" >
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col-4">
-                                 <img src="https://placehold.co/500x500" class="image-circle mx-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                                 <div class="image-text mt-4">
-                                    <p>Name</p>
-                                    <p>Company</p>
-                                 </div>
-                              </div>
-                              <div class="col-4">
-                              <div class="text-center ">
-                                 <img src="https://placehold.co/500x500" class="image-circle mx-auto d-block"  style="width: 18.75rem;height: 18.75rem; " alt="" srcset="">
-                                 <div class="image-text mt-4">
-                                    <p>Name</p>
-                                    <p>Company</p>
-                                 </div>
-                  
-                              </div>
-                              </div>
-                              <div class="col-4">
-                              <div class="text-center">
-                                 <img src="https://placehold.co/500x500" class="image-circle mx-auto d-block"  style="width: 18.75rem;height: 18.75rem;" alt="" srcset="">
-                                 <div class="image-text mt-4">
-                                    <p>Name</p>
-                                    <p>Company</p>
-                                 </div>
-                              </div>
-                              </div>
+      <div class="d-none d-md-block">
+         <!-- hidden on mobile  -->
+         <h1 class="text-center senior-meet mt-3" style="font-size: 5rem;">MEET OUR SENIORS</h1>
+         <div class="swiper mySwiper" style="height: 80vh;">
+            <div class="swiper-wrapper">
+               
+               
+               <div class="swiper-slide">
+                  <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-4">
+                           <img src="images/seniors/Yaswanth Mullamuri.jpeg" class="image-circle mx-auto d-block "
+                              alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
+                           <div class="image-text mt-4">
+                              <p>M Venkata Yaswanth</p>
+                              <p>TCS Digital</p>
                            </div>
                         </div>
-                    </div>
-      
-      
-                    <div class="swiper-slide">
-                        <div class="container-fluid">
-                           <div class="row">
-                              <div class="col-4">
-                                 <img src="https://placehold.co/500x500" class="image-circle mx-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                                 <div class="image-text mt-4">
-                                    <p>Name</p>
-                                    <p>Company</p>
-                                 </div>
+                        <div class="col-4">
+                           <div class="text-center ">
+                              <img src="images/seniors/NischalP.jpeg" class="image-circle mx-auto d-block"
+                                 style="width: 18.75rem;height: 18.75rem; " alt="" srcset="">
+                              <div class="image-text mt-4">
+                                 <p>Nischal Raghuram</p>
+                                 <p>ZS Associates</p>
                               </div>
-                              <div class="col-4">
-                              <div class="text-center ">
-                                 <img src="https://placehold.co/500x500" class="image-circle mx-auto d-block"  style="width: 18.75rem;height: 18.75rem; " alt="" srcset="">
-                                 <div class="image-text mt-4">
-                                    <p>Name</p>
-                                    <p>Company</p>
-                                 </div>
-                  
-                              </div>
-                              </div>
-                              <div class="col-4">
-                              <div class="text-center">
-                                 <img src="https://placehold.co/500x500" class="image-circle mx-auto d-block"  style="width: 18.75rem;height: 18.75rem;" alt="" srcset="">
-                                 <div class="image-text mt-4">
-                                    <p>Name</p>
-                                    <p>Company</p>
-                                 </div>
-                  
-                              </div>
-                              </div>
-                           </div>
-                        </div>
-                    </div>
-                  
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
 
+                           </div>
+                        </div>
+                        <div class="col-4">
+                           <div class="text-center">
+                              <img src="images/seniors/P Sowmiyaa (RA1911042020010).jpeg"
+                                 class="image-circle mx-auto d-block" style="width: 18.75rem;height: 18.75rem;" alt=""
+                                 srcset="">
+                              <div class="image-text mt-4">
+                                 <p>P Sowmiyaa</p>
+                                 <p>Uipath</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="swiper-slide">
+                  <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-4">
+                           <img src="images/seniors/Ranit.jpg" class="image-circle mx-auto d-block " alt="" srcset=""
+                              style="width: 18.75rem;height: 18.75rem;">
+                           <div class="image-text mt-4">
+                              <p>Ranit Sen</p>
+                              <p>Lister Technologies</p>
+                           </div>
+                        </div>
+                        <div class="col-4">
+                           <div class="text-center ">
+                              <img src="images/seniors/Renuka Thanmai (RA1911042020015).jpeg"
+                                 class="image-circle mx-auto d-block" style="width: 18.75rem;height: 18.75rem; " alt=""
+                                 srcset="">
+                              <div class="image-text mt-4">
+                                 <p>Renuka Thanmai</p>
+                                 <p>TheMathCompany</p>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="col-4">
+                           <div class="text-center">
+                              <img src="images/seniors/Abir.jpg" class="image-circle mx-auto d-block"
+                                 style="width: 18.75rem;height: 18.75rem;" alt="" srcset="">
+                              <div class="image-text mt-4">
+                                 <p>Abir Lal Dhar</p>
+                                 <p>Brillio</p>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
          </div>
-         <div class="d-md-none">
-            <!-- hidden on desktop  -->
-            <h1 class="text-center senior-meet mb-5 mt-3" style="font-size: 10vw;">MEET OUR SENIORS</h1>
-            <div class="swiper mySwiper" style="height: 70vh;">
-               <div class="swiper-wrapper">
-                 <div class="swiper-slide">
+
+      </div>
+      <div class="d-md-none">
+         <!-- hidden on desktop  -->
+         <h1 class="text-center senior-meet mb-5 mt-3" style="font-size: 10vw;">MEET OUR SENIORS</h1>
+         <div class="swiper mySwiper" style="height: 70vh;">
+            <div class="swiper-wrapper">
+              
+              
+               <div class="swiper-slide">
                   <div class="container-fluid">
                      <div class="col-12">
-                        <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
+                        <img src="images/seniors/Yaswanth Mullamuri.jpeg" class="image-circle mx-auto d-block " alt=""
+                           srcset="" style="width: 18.75rem;height: 18.75rem;">
                         <div class="image-text mt-4">
-                           <p>Name</p>
-                           <p>Company</p>
+                           <p>M Venkata Yaswanth</p>
+                           <p>TCS Digital</p>
                         </div>
 
                      </div>
                   </div>
-                 </div>
-                 <div class="swiper-slide">
-                     <div class="container-fluid">
-                        <div class="col-12">
-                           <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                           <div class="image-text mt-4">
-                              <p>Name</p>
-                              <p>Company</p>
-                           </div>
-
-                        </div>
-                     </div>
-                  </div>
-
-                 <div class="swiper-slide">
-                     <div class="container-fluid">
-                        <div class="col-12">
-                           <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                           <div class="image-text mt-4">
-                              <p>Name</p>
-                              <p>Company</p>
-                           </div>
-
-                        </div>
-                     </div>
-                  </div>
-
                </div>
-               <div class="swiper-pagination"></div>
-             </div>
-         </div>
-      </section>
-
-      <section id="team" style="background-color: #E2C8FC; min-height: 100vh; ">
-
-         <div class="d-none d-md-block mt-2">
-            <!-- hidden on mobile  -->
-            <div class="text-center">
-               <h1 class="Senior-header" style="font-size:2.375rem;">Meet our team of creators,</h1>
-               <h1 class="Senior-header" style="font-size:2.375rem;">coders, designers and </h1>
-               <h1 class="Senior-header" style="font-size:2.375rem;">problem solvers</h1>
-            </div>
-            <div class="container-fluid">
-                  
-               <div class="row">
-                     <div class="mx-auto d-block mt-2">
-                        <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 18.75rem;height: 18.75rem;">
-                        <div class=" text-center image-team-text mt-2">
-                           <p>Name</p>
-                           <p>description</p>
-                        </div>
-                     </div>
-               </div>
-               <div class="row mt-4">
-                  <div class="mx-auto d-block mt-2">
-                     <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 18.75rem;height: 18.75rem;">
-                     <div class=" text-center image-team-text mt-2">
-                        <p>Name</p>
-                        <p>description</p>
-                     </div>
-                  </div>
-                  <div class="mx-auto d-block mt-2">
-                     <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 18.75rem;height: 18.75rem;">
-                     <div class=" text-center image-team-text mt-2">
-                        <p>Name</p>
-                        <p>description</p>
-                     </div>
-                  </div>
-                  <div class="mx-auto d-block mt-2">
-                     <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 18.75rem;height: 18.75rem;">
-                     <div class=" text-center image-team-text mt-2">
-                        <p>Name</p>
-                        <p>description</p>
-                     </div>
-                  </div>
-                 
-            </div>
-
-            </div>
-
-         </div>
-
-         <div class="d-md-none" >
-            <!-- hidden on desktop  -->
-            <div class="text-center mb-5 mt-3">
-               <h1 class="Senior-header" style="font-size:1.5625rem;">Meet our team of creators,</h1>
-               <h1 class="Senior-header" style="font-size:1.5625rem;">coders, designers and </h1>
-               <h1 class="Senior-header" style="font-size:1.5625rem;">problem solvers</h1>
-            </div>
-            <div class="swiper mySwiper" style="height: 70vh;">
-               <div class="swiper-wrapper">
-                 <div class="swiper-slide" style="background-color: #E2C8FC">
+               <div class="swiper-slide">
                   <div class="container-fluid">
                      <div class="col-12">
-                        <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
+                        <img src="images/seniors/NischalP.jpeg" class="image-circle mx-auto d-block"
+                           style="width: 18.75rem;height: 18.75rem; " alt="" srcset="">
+                        <div class="image-text mt-4">
+                           <p>Nischal Raghuram</p>
+                           <p>ZS Associates</p>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="images/seniors/P Sowmiyaa (RA1911042020010).jpeg" class="image-circle mx-auto d-block"
+                           style="width: 18.75rem;height: 18.75rem;" alt="" srcset="">
+                        <div class="image-text mt-4">
+                           <p>P Sowmiyaa</p>
+                           <p>Uipath</p>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="images/seniors/Ranit.jpg" class="image-circle mx-auto d-block " alt="" srcset=""
+                           style="width: 18.75rem;height: 18.75rem;">
+                        <div class="image-text mt-4">
+                           <p>Ranit Sen</p>
+                           <p>Lister Technologies</p>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="images/seniors/Renuka Thanmai (RA1911042020015).jpeg"
+                           class="image-circle mx-auto d-block" style="width: 18.75rem;height: 18.75rem; " alt=""
+                           srcset="">
+                        <div class="image-text mt-4">
+                           <p>Renuka Thanmai</p>
+                           <p>TheMathCompany</p>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="images/seniors/Abir.jpg" class="image-circle mx-auto d-block"
+                           style="width: 18.75rem;height: 18.75rem;" alt="" srcset="">
+                        <div class="image-text mt-4">
+                           <p>Abir Lal Dhar</p>
+                           <p>Brillio</p>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </div>
+   </section>
+
+   <section id="team" style="background-color: #E2C8FC; min-height: 100vh; ">
+
+      <div class="d-none d-md-block mt-2">
+         <!-- hidden on mobile  -->
+         <div class="text-center">
+            <h1 class="Senior-header" style="font-size: 5rem;">Meet our CapTAIN </h1>
+            <h1 class="Senior-header" style="font-size: 5rem;">and HIS CREw</h1>
+         </div>
+         <div class="container-fluid">
+
+            <div class="row">
+               <div class="mx-auto d-block mt-2">
+                  <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 356px;height: 356px">
+                  <div class=" text-center image-team-text mt-2">
+                     <p>Name</p>
+                     <p>description</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-4">
+               <div class="mx-auto d-block mt-2">
+                  <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 267px;height: 267px">
+                  <div class=" text-center image-team-text mt-2">
+                     <p>Name</p>
+                     <p>description</p>
+                  </div>
+               </div>
+               <div class="mx-auto d-block mt-2">
+                  <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 267px;height: 267px">
+                  <div class=" text-center image-team-text mt-2">
+                     <p>Name</p>
+                     <p>description</p>
+                  </div>
+               </div>
+               <div class="mx-auto d-block mt-2">
+                  <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 267px;height: 267px">
+                  <div class=" text-center image-team-text mt-2">
+                     <p>Name</p>
+                     <p>description</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="row mt-4 mb-5">
+               <div class="mx-auto d-block mt-2">
+                  <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 267px;height: 267px"">
+                     <div class=" text-center image-team-text mt-2">
+                  <p>Name</p>
+                  <p>description</p>
+               </div>
+            </div>
+            <div class="mx-auto d-block mt-2">
+               <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 267px;height: 267px">
+               <div class=" text-center image-team-text mt-2">
+                  <p>Name</p>
+                  <p>description</p>
+               </div>
+            </div>
+            <div class="mx-auto d-block mt-2">
+               <img src="images/Ellipse_placeholder.png" class="image-circle" style="width: 267px;height: 267px">
+               <div class=" text-center image-team-text mt-2">
+                  <p>Name</p>
+                  <p>description</p>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+      </div>
+
+      <div class="d-md-none">
+         <!-- hidden on desktop  -->
+         <div class="text-center mb-5 mt-3">
+            <h1 class="Senior-header" style="font-size: 2.5rem;">Meet our CapTAIN </h1>
+            <h1 class="Senior-header" style="font-size: 2.5rem;">and HIS CREw</h1>
+         </div>
+         <div class="swiper mySwiper" style="height: 70vh;">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-color: #E2C8FC">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt=""
+                           srcset="" style="width: 18.75rem;height: 18.75rem;">
                         <div class="image-team-text mt-4">
                            <p>Name</p>
                            <p>description</p>
@@ -384,205 +540,256 @@
 
                      </div>
                   </div>
-                 </div>
-                 <div class="swiper-slide" style="background-color: #E2C8FC">
-                     <div class="container-fluid">
-                        <div class="col-12">
-                           <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                           <div class="image-team-text mt-4">
-                              <p>Name</p>
-                              <p>description</p>
-                           </div>
-
+               </div>
+               <div class="swiper-slide" style="background-color: #E2C8FC">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt=""
+                           srcset="" style="width: 18.75rem;height: 18.75rem;">
+                        <div class="image-team-text mt-4">
+                           <p>Name</p>
+                           <p>description</p>
                         </div>
+
                      </div>
                   </div>
+               </div>
 
-                 <div class="swiper-slide" style="background-color: #E2C8FC">
-                     <div class="container-fluid">
-                        <div class="col-12">
-                           <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                           <div class="image-team-text mt-4">
-                              <p>Name</p>
-                              <p>description</p>
-                           </div>
-
+               <div class="swiper-slide" style="background-color: #E2C8FC">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt=""
+                           srcset="" style="width: 18.75rem;height: 18.75rem;">
+                        <div class="image-team-text mt-4">
+                           <p>Name</p>
+                           <p>description</p>
                         </div>
+
                      </div>
                   </div>
-                 <div class="swiper-slide" style="background-color: #E2C8FC">
-                     <div class="container-fluid">
-                        <div class="col-12">
-                           <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt="" srcset="" style="width: 18.75rem;height: 18.75rem;">
-                           <div class="image-team-text mt-4">
-                              <p>Name</p>
-                              <p>description</p>
-                           </div>
-
+               </div>
+               <div class="swiper-slide" style="background-color: #E2C8FC">
+                  <div class="container-fluid">
+                     <div class="col-12">
+                        <img src="https://placehold.co/500x500" class="image-circle mx-auto my-auto d-block " alt=""
+                           srcset="" style="width: 18.75rem;height: 18.75rem;">
+                        <div class="image-team-text mt-4">
+                           <p>Name</p>
+                           <p>description</p>
                         </div>
+
                      </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </div>
+
+   </section>
+
+
+   <section id="Reach" style="border-bottom: 1px solid black;">
+
+      <div class="d-none d-md-block">
+         <!-- hidden on mobile  -->
+         <h1 class="text-center mt-5 mb-5" style="font-size: 4rem " id="Reach-header">REACH US OUT AT</h1>
+      </div>
+      <div class="d-md-none">
+         <!-- hidden on desktop  -->
+         <h1 class="text-center mt-5 mb-5" style="font-size: 7.5vw" id="Reach-header">REACH US OUT AT</h1>
+      </div>
+
+      <div class="row">
+         <div class="col-lg-4 col-md-12 mt-5">
+            <img src="images/instagram.png" class="mx-5 mx-md-auto d-block">
+            <p class="text-left text-md-center mx-3 mt-3 mt-md-4 text-mention">Some text here</p>
+         </div>
+         <div class="col-lg-4 col-md-12 mt-5 d-flex flex-column align-items-end align-items-md-center">
+            <img src="images/linkedin-reach.png" class="mr-4 mx-md-auto d-block">
+            <p class="text-md-center mt-4 mr-1 text-mention">Some text here</p>
+         </div>
+         <div class="col-lg-4 col-md-12 mt-5">
+            <img src="images/twitter.png" class="mx-5 mx-md-auto d-block">
+            <p class="text-left text-md-center mx-3 mt-1 text-mention">Some text here</p>
+         </div>
+
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-3 d-none d-md-block mt-5">
+
+               </div>
+               <div class="col-lg-6 d-md-block mt-5">
+                  <div class="col-md-12 d-lg-block mt-5 mb-5 text-center">
+                     <p
+                        style="font-family: 'Plus Jakarta Sans', sans-serif;font-weight: 600; font-size: 1.5625rem; text-transform: uppercase;">
+                        Connect with us!</p>
+                     <p class="m-0 text-color d-none d-md-block text-body">
+                        We'd love to hear from you. Follow us on social media to stay updated on the latest news,
+                        events, and promotions. Got any questions? Our team is here to help!
+                     </p>
+                     <p class="m-0 text-color d-md-none text-body"
+                        style="color: #7E7C6A !important; text-transform: uppercase;">
+                        We'd love to hear from you
+                     </p>
                   </div>
 
                </div>
-               <div class="swiper-pagination"></div>
-             </div>
-           
-
-         </div>
-
-      </section>
-
-
-      <section id="Reach" style="border-bottom: 1px solid black;">
-
-         <h1 class="text-center mt-5 mb-5" id="Reach-header">REACH US OUT AT</h1>
-         <div class="row">
-            <div class="col-lg-4 col-md-12 mt-5">
-               <img src="images/instagram.png" class="mx-auto d-block" >
-               <p class="text-center mt-1 text-mention">Some text here</p>
+               <div class="col-lg-3 d-none d-md-block mt-5">
+               </div>
             </div>
-            <div class="col-lg-4 col-md-12 mt-5">
-               <img src="images/instagram.png" class="mx-auto d-block">
-               <p class="text-center mt-1 text-mention">Some text here</p>
-            </div>
-            <div class="col-lg-4 col-md-12 mt-5">
-               <img src="images/instagram.png" class="mx-auto d-block">
-               <p class="text-center mt-1 text-mention">Some text here</p>
-            </div>
-            <div class="col-md-12 d-lg-block mt-5 mb-5 text-center">
-               <p class="m-0 text-color" id="text-body">
-                  There are many variations of passages of Lorem<br>
-                  Ipsum available, but the majority have suffered<br>
-                  alteration in some form, by injected humour, or<br>
-                  randomised words which don't look even<br>
-                  slightly believable. If you are going to use a
-               </p>
-            </div>
-            <div class="col-md-12 d-lg-block mt-5 text-center">
-               <h1 id="footer">WRITE US AT</h1>
-               <P class="mt-3 text-color" id="email">helloSNP@domain.com</P>
-            </div>
-
          </div>
 
 
 
-        
-      </section>
+         <div class="col-md-12 d-lg-block mt-5 text-center">
+            <h1
+               style="font-family: 'Plus Jakarta Sans', sans-serif;font-weight: 600; font-size: 1.5625rem; text-transform: uppercase;">
+               WRITE US AT</h1>
+            <p class="m-0 text-color d-md-none text-body" style="color: #7E7C6A !important; text-transform: uppercase;">
+               Got any questions? Our team is here to help!</p>
+            <P class="mt-3 text-color mb-3" id="email" style="color: #000; text-transform: uppercase;font-size: 16px;">
+               <a href="mailto:slugnplug.contact@gmail.com">SLUGNPLUG.CONTACT@GMAIL.COM</a></P>
+         </div>
 
-      <section id="footer" style="background-color: #C1C1C1; min-height: 25rem !important;" >
+      </div>
 
-         <div class="d-none d-md-block" style="font-size: 1.5vw;">
-            <!-- hidden on mobile  -->
 
+
+
+   </section>
+
+   <section id="footer" style="background-color: #C1C1C1; min-height: 200px !important;">
+
+      <div class="d-none d-md-block" style="font-size: 1.5vw;">
+         <!-- hidden on mobile  -->
+         <div class="container-fluid">
             <div class="row">
                <div class="col-md-6">
-
-                  <div class="ml-4 mt-1">
-                     <div>
+                  <div>
                      <img src="images/logo.png" class="img-fluid" style="height: 5.5rem; height: 5.5rem;" srcset="">
-                     <span id="footer-snp">SLUGNPLUG | SRMIST RMP</span> 
-                     </div>
-
-                     
-                     <div class="footer-social-text">
-
-
-                      <div class="d-inline-flex align-items-center">
-                        
-                        <img src="images/instagram.png" class="footer-social-images ml-2 mt-4">
-                        <a href="">
-                        <div class="ml-2 mt-3">OUR INSTAGRAM</div>
-                        </a>
-                      </div>
-                      <br>
-                      <div class="d-inline-flex align-items-center">
-                        <img src="images/linkedin.png" class="footer-social-images ml-2 mt-1">
-                        <a href="">
-                        <div class="ml-2">OUR LINKEDIN</div>
-                        </a>
-                      </div>
-                      <br>
-                      <div class="d-inline-flex align-items-center">
-                        <img src="images/medium.png" class="footer-social-images ml-2 mt-1">
-                        <a href="">
-                        <div class="ml-2">OUR MEDIUM</div>
-                        </a>
-                      </div>
-                      <br>
-                      <div class="d-inline-flex align-items-center">
-                        <img src="images/discord.png" class="footer-social-images ml-2 mt-1">
-                        <a href="">
-                        <div class="ml-2">OUR DISCORD</div>
-                        </a>
-                      </div>
-
-                     </div>
+                     <span class="footer-snp">SLUGNPLUG | SRMIST RMP</span>
                   </div>
-
-
                </div>
+
                <div class="col-md-6">
-                  <div class="text-right mt-4 mr-5" id="footer-text-body">
-                     <p>There are many variations of passages of</p>
-                     <p>There are many variations of passages of</p>
-                     <p>There are many variations of passages of</p>
-                     <p>There are many variations of passages of</p>
+                  <div class="d-flex justify-content-end mt-1">
+                     <button onclick="location.href='http://www.example.com'" type="button" class="snp-button">SPONSOR
+                        US</button>
                   </div>
                </div>
             </div>
+            <div class="container mt-5">
+               <div class="row">
+                  <div class="col-md-3">
+                     <a href=""><img src="images/instagram.png" class="footer-social-images">
+                        <span class="footer-social-text ml-2">OUR INSTAGRAM</span></a>
+                  </div>
+                  <div class="col-md-3">
+                     <a href=""><img src="images/linkedin.png" class="footer-social-images">
+                        <span class="footer-social-text ml-2">OUR LINKEDIN</span></a>
+                  </div>
+                  <div class="col-md-3">
+                     <a href=""><img src="images/medium.png" class="footer-social-images">
+                        <span class="footer-social-text ml-2">OUR MEDIUM</span></a>
+                  </div>
+                  <div class="col-md-3">
+                     <a href=""><img src="images/twitter.png" class="footer-social-images">
+                        <span class="footer-social-text ml-2">OUR TWITTER</span></a>
+                  </div>
 
-
-         </div>
-         <div class="d-md-none" style="font-size: 5vw;">
-            <!-- hidden on desktop  -->
-
-            <div class="container">
-               <div class="mt-3 footer-social-text">
-
-               <a href="" style="font-weight: 600;">SLUGNPLUG</a>
-               <hr>
-               <a href="" style="font-weight: 400;">OUR TEAM</a>
-               <hr>
-               <a href="" style="font-weight: 400;">ABOUT US</a>
-               <hr>
                </div>
 
-               <div class="row justify-content-between " style="margin-top: 6.25rem !important;">
-                  <div class="col-3">
-                      <a href=""><img src="images/instagram.png" class="mobile-footer-social-images"></a>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="d-md-none" style="font-size: 5vw;">
+         <!-- Hidden on Desktop -->
+
+         <div class="container">
+            <div class="row">
+               <div class="col-12 mt-2">
+                  <div>
+                     <img src="images/logo.png" class="img-fluid" style="height: 50px; height: 50px;" srcset="">
+                     <span class="footer-snp" style="font-size: 1.054375rem;">SLUGNPLUG | SRMIST RMP</span>
                   </div>
-                  <div class="col-3">
-                      <a href=""><img src="images/linkedin.png" class="mobile-footer-social-images"></a>
+               </div>
+               <div class="col-12 mt-2">
+                  <div class="d-flex justify-content-center mt-1">
+                     <button onclick="location.href='http://www.example.com'" type="button" class="snp-button"
+                        style="width: 139px; height: 50px; font-size: 16px;">SPONSOR US</button>
+
                   </div>
-                  <div class="col-3">
-                      <a href=""><img src="images/medium.png" class="mobile-footer-social-images"></a>
+               </div>
+               <div class="container-fluid mobile-footer-social mt-3">
+                  <div class="row">
+
+                     <div class="col-6">
+                        <div class="d-flex flex-column align-items-start">
+                           <a href=""><img src="images/instagram.png" alt="" style="width: 18.9px;height: 17.53px">
+                              <span style="font-size: 14.85px;">OUR INSTAGRAM</span>
+                           </a>
+                           <a href=""><img src="images/medium.png" alt="" style="width: 18.9px;height: 17.53px">
+                              <span style="font-size: 14.85px;">OUR MEDIUM</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-6">
+                        <div class="d-flex flex-column align-items-end">
+                           <a href=""><img src="images/linkedin.png" alt="" style="width: 18.9px;height: 17.53px">
+                              <span style="font-size: 14.85px;">OUR LINKEDIN</span>
+                           </a>
+                           <a href=""><img src="images/discord.png" alt="" style="width: 20.92px;height: 19.41px">
+                              <span style="font-size: 14.85px;">OUR DISCORD</span>
+                           </a>
+                        </div>
+                     </div>
+
                   </div>
-                  <div class="col-3">
-                      <a href=""><img src="images/discord.png" class="mobile-footer-social-images"></a>
-                  </div>
-              </div>
+               </div>
+
+
             </div>
          </div>
-      </section>
+      </div>
+   </section>
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-      <script>
-         var swiper = new Swiper(".mySwiper", {
-           pagination: {
-             el: ".swiper-pagination",
-             dynamicBullets: true,
-           },
-         });
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+         },
+      });
 
-       </script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"
-         integrity="sha384-9IK38xO7hjQrZhWmc7zeomQTVYYuR7HR0vT8WAn7VGMXEQkCkJ7mxOFvB8WJq3A6"
-         crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </script>
+   <script>
+      // Get the section element with an id of "Home"
+      var section = document.querySelector('#Home');
+      var coolest = document.querySelector('#collest');
+      // Check if the screen width is ≥768px
+      if (window.innerWidth >= 768) {
+         // Set the min-height of the section element to 500px
+         section.style.minHeight = '90vh';
+         coolest.style.backgroundColor = '#ffff';
 
-   </body>
+      }
+   </script>
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"
+      integrity="sha384-9IK38xO7hjQrZhWmc7zeomQTVYYuR7HR0vT8WAn7VGMXEQkCkJ7mxOFvB8WJq3A6"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
