@@ -1,45 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-div, section, span, ul, li, a, header{
-    box-sizing: border-box;
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+  box-sizing: border-box;
 }
-section{
-    width: 100%;
-    float: left;
-    min-height: 100vh;
-    position: relative;
+section {
+  width: 100%;
+  float: left;
+  min-height: 100vh;
+  position: relative;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden !important;
-   /* overflow-x: initial !important;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  /* overflow-x: initial !important;
     */
 }
 a {
-    color: inherit;
-    text-decoration: inherit;
-   /* no underline */
+  color: inherit;
+  text-decoration: inherit;
+  /* no underline */
 }
-a:hover{
-    color: inherit;
-    text-decoration: inherit;
-   /* no underline */
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+  /* no underline */
 }
 
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
 
 hr {
-    border: none;
-    height: 1px;
-   /* Set the hr color */
-    color: #333;
-   /* old IE */
-    background-color: #333;
-   /* Modern Browsers */
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333;
+  /* old IE */
+  background-color: #333;
+  /* Modern Browsers */
 }
 /* div[class="row"] {
     outline: 1px dotted rgba(0, 0, 0, 0.25);
@@ -48,292 +54,298 @@ div[class^="col-"] {
     background-color: rgba(255, 0, 0, 0.2);
     outline: 1px dotted rgba(0, 0, 0, 0.5);
 } */
-.Border-bottom{
-    border-bottom: 1px solid black;
+.Border-bottom {
+  border-bottom: 1px solid black;
 }
-.Border-right{
-    border-right: 1px solid black;
+.Border-right {
+  border-right: 1px solid black;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 .navbar {
-    background-color: #fff;
-   /* height: 100px;
+  background-color: #fff;
+  /* height: 100px;
     */
-    border-bottom: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
 }
 .navbar-brand {
-   /* font-size: 1.55rem;
+  /* font-size: 1.55rem;
     */
-    font-weight: 600;
-    color: #000 !important;
+  font-weight: 600;
+  color: #000 !important;
 }
 .navbar-nav .nav-link {
-    font-size: 1.5625rem;
-    color: #000 !important;
-    text-transform: uppercase;
-    margin: 0 1.5625rem;
+  font-size: 1.5625rem;
+  color: #000 !important;
+  text-transform: uppercase;
+  margin: 0 1.5625rem;
 }
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+  color: #007bff;
 }
 .navbar-nav .nav-item:nth-child(4) {
-    background-color: #FECA19;
-    border-radius: 10px 0px 0px 10px;
-    margin-left: auto;
-    margin-right: 0;
-
+  background-color: #feca19;
+  border-radius: 10px 0px 0px 10px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .navbar-nav .nav-item:nth-child(4):hover {
-    background-color: rgba(240, 191, 25, 1);
+  background-color: rgba(240, 191, 25, 1);
 }
 .navbar-nav {
-    margin-right: -16px;
+  margin-right: -16px;
 }
-  
-#logo{
-    width: 4.375rem;
-    height: 4.375rem;
+
+#logo {
+  width: 4.375rem;
+  height: 4.375rem;
 }
-.moto{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 3.5vw;
-    font-weight: 800;
-    text-transform: uppercase;
+.moto {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 /* 
 #desktop-home{
     min-height: 100%;
 } */
-.gradient{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,184,1) 63%, rgba(0,212,255,1) 87%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 1%;
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 0, 184, 1) 63%,
+    rgba(0, 212, 255, 1) 87%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1%;
 }
-
 
 #collab {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .snp {
-    background: linear-gradient(89.95deg, #FF00B8 5.23%, #004BDD 45.64%, #8F00FF 112.05%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: linear-gradient(
+    89.95deg,
+    #ff00b8 5.23%,
+    #004bdd 45.64%,
+    #8f00ff 112.05%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.KnowMoreAboutTechGig-padding{
-    padding: 1em 2em;
-
+.KnowMoreAboutTechGig-padding {
+  padding: 1em 2em;
 }
 
 .KnowMoreAboutTechGig {
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-   /* color: #2c9caf;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  /* color: #2c9caf;
     */
-    background: linear-gradient(130deg, rgba(255,0,184,1) 0%, rgba(0,75,221,0.8) 50%, rgba(143,0,255,1) 100%);
-    transition: all 1000ms;
-    font-size: 0.9375rem;
-   /* position: relative;
+  background: linear-gradient(
+    130deg,
+    rgba(255, 0, 184, 1) 0%,
+    rgba(0, 75, 221, 0.8) 50%,
+    rgba(143, 0, 255, 1) 100%
+  );
+  transition: all 1000ms;
+  font-size: 0.9375rem;
+  /* position: relative;
     */
-    overflow: hidden;
-    outline: 2px solid #ffffff;
-    margin-bottom: 1.875rem;
+  overflow: hidden;
+  outline: 2px solid #ffffff;
+  margin-bottom: 1.875rem;
 }
 .KnowMoreAboutTechGig:hover {
-    color: #ffffff;
-    transform: scale(1.1);
-    outline: 2px solid #ffffff;
-    box-shadow: 4px 5px 17px -4px #2c55b0;
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px #2c55b0;
 }
 .KnowMoreAboutTechGig::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #000000;
-    transform: skewX(45deg);
-    z-index: -1;
-    transition: width 1000ms;
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000000;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
 }
 .KnowMoreAboutTechGig:hover::before {
-    width: 250%;
+  width: 250%;
 }
 
-
-
-.cool{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 75px;
-    line-height: normal;
+.cool {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 85px;
 }
-.cool-mobile{
-    font-weight: 600;
-    font-size: 2.1875rem;
-    line-height: normal;
-
-}
-.gradient-collab{
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(177, 12, 12));
-    margin: none;
-    padding: none;
-}
-#Reach-header{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
-    text-align: center !important;
+.cool-mobile {
+  font-weight: 600;
+  font-size: 2.1875rem;
+  line-height: normal;
 }
 
-.Senior-header{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: linear-gradient(150deg, rgba(255,0,184,1) 0%, rgba(0,87,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
-
+.gradient-collab {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(177, 12, 12));
+  margin: none;
+  padding: none;
+}
+#Reach-header {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-align: center !important;
 }
 
-.text-body,#email,.text-mention{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.5625rem;
-}
-.text-color{
-    color: #7E7C6A ;
-}
-
-
-.footer-snp{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-}
-.footer-social-images{
-    width: 4.0625rem;
-    height: 4.0625rem;
-}
-.footer-social-text{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 22px;
-}
-#footer-text-body{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
+.Senior-header {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 0, 184, 1) 0%,
+    rgba(0, 87, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-
-
-
-.mobile-footer-social{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
+.text-body,
+#email,
+.text-mention {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5625rem;
 }
-.footer-social-images{
-    width: 45px;
-    height: 45px;
-
+.text-color {
+  color: #7e7c6a;
 }
 
-button[class^="snp-button"]{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    width:247px;
-    height:75px;
-    border-width:1px;
-    color:rgba(0, 0, 0, 1);
-    border-color:rgba(254, 202, 25, 1);
-    font-weight:bold;
-    border-radius: 10px;
-    box-shadow: -4px 5px 2px 0px rgba(16, 17, 16, 0.25);
-    background:rgba(254, 202, 25, 1);
-
+.footer-snp {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.footer-social-images {
+  width: 4.0625rem;
+  height: 4.0625rem;
+}
+.footer-social-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+#footer-text-body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
-
-button[class^="snp-button"]:hover{
-    background: rgba(240, 191, 25, 1)
-
+.mobile-footer-social {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+.footer-social-images {
+  width: 45px;
+  height: 45px;
 }
 
+button[class^="snp-button"] {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  width: 247px;
+  height: 75px;
+  border-width: 1px;
+  color: rgba(0, 0, 0, 1);
+  border-color: rgba(254, 202, 25, 1);
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: -4px 5px 2px 0px rgba(16, 17, 16, 0.25);
+  background: rgba(254, 202, 25, 1);
+}
 
-
+button[class^="snp-button"]:hover {
+  background: rgba(240, 191, 25, 1);
+}
 
 .swiper {
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  height: 80%;
 }
 .swiper-slide {
-    text-align: center;
-    font-size: 1.125rem;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 1.125rem;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 .centered {
-    float: none;
-    margin-left: 0;
-    margin-right: 0;
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
 }
-.image-circle{
-    border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+.image-circle {
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
 }
-.image-text{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: #ffffff;
+.image-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffffff;
 }
-.image-team-text{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.5625rem;
-    color: #000;
-    text-transform: uppercase;
-}
-
-.senior-meet{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 800;
-    /* background: rgb(255,255,255); */
-    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(255, 196, 0, 0.956) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
+.image-team-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.5625rem;
+  color: #000;
+  text-transform: uppercase;
 }
 
-.swiper-pagination-bullet{
-    background-color: white !important;
+.senior-meet {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  /* background: rgb(255,255,255); */
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 196, 0, 0.956) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
 }
