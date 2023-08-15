@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generative AI</title>
+</head>
+<body>
+
+<form id="registration-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="year">Year:</label>
+    <select id="year" name="year" required>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+    </select><br>
+
+    <label for="register-number">Register Number:</label>
+    <input type="text" id="register-number" name="register-number" required><br>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department" required><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<script>
+    document.getElementById("registration-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        sendDataToBackend(data);
+    });
+
+    async function sendDataToBackend(data) {
+        const response = await fetch('/submit-registration', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        console.log(result);
+    }
+</script>
+
+</body>
+</html>
