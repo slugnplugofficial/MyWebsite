@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+      "google-spreadsheet": "^4.0.2",
+      "googleapis": "^126.0.0"
+    }
+  }
+  

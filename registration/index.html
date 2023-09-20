@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Page Example</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .split-container {
+        height: 100% !important;
+      }
+
+      .left-half,
+      .right-half {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .left-half {
+        background-color: #f8f8f8;
+      }
+
+      .right-half {
+        background-color: #fff;
+        padding: 2rem;
+      }
+
+      .form-container {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="split-container">
+      <div class="row" style="height: 100vh">
+        <div class="d-none d-md-flex col-md-6 left-half">
+          <img
+            src="https://placehold.co/500x500"
+            alt="Image"
+            class="img-fluid mx-auto d-block"
+          />
+        </div>
+
+        <div class="col-md-6 right-half">
+            <div class="form-container">
+                <!-- Alert div for displaying success message -->
+                <div id="message-alert" class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
+                  Form submitted successfully!
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                
+                <form id="myForm">
+                  <div class="form-row justify-content-between">
+                  <div class="form-group col-md-5">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="name"
+                      placeholder="Enter your name"
+                      required="true"
+                    />
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label for="regNo">Register No.</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="regNo"
+                      placeholder="Enter your register number"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-row justify-content-between">
+                  <div class="form-group col-md-5">
+                    <label for="year">Year</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="year"
+                      placeholder="Enter your year of study"
+                      required="true"
+                    />
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label for="dept">Department</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="dept"
+                      placeholder="Enter your department"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-row justify-content-between">
+                  <div class="form-group col-md-5">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="email"
+                      placeholder="Enter your email"
+                      required="true"
+                    />
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg"
+                      id="phone"
+                      placeholder="Enter your phone number"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group text-center pt-3">
+                  <button type="submit" class="btn btn-primary btn-lg" style="width: 140px;">Submit</button>
+                </div>
+              </form>
+              </div>
+              
+        </div>
+      </div>
+    </div>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          
+          // Get form data
+            const formDataJson = {
+                name: document.getElementById('name').value,
+                regNo: document.getElementById('regNo').value,
+                year: document.getElementById('year').value,
+                dept: document.getElementById('dept').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value
+            };
+          
+          // Perform form submission and handle success or error
+          fetch(window.location.origin+"/api/register", {
+            method: "POST",
+            headers: {
+            'Content-Type': 'application/json'
+             },
+             body: JSON.stringify(formDataJson)
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log(data.status);
+            console.log(typeof data.status);
+            console.log(typeof String(data.status));
+
+
+            if (String(data.status) === "true") {
+              showMessageAlert("success", "Form submitted successfully!");
+              document.getElementById("myForm").reset();
+              setTimeout(function() {
+                document.getElementById("message-alert").style.display = "none"; // Hide the message alert after 3 seconds
+              }, 3000);
+            } else {
+              showMessageAlert("danger", "Form submission failed. Please try again.");
+              document.getElementById("myForm").reset();
+            }
+          })
+          .catch(error => {
+            showMessageAlert("danger", "An error occurred. Please try again later.");
+            document.getElementById("myForm").reset();
+          });
+          
+          // Reset the form after submission
+
+        });
+      
+        function showMessageAlert(type, message) {
+          const alertDiv = document.getElementById("message-alert");
+          alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+          alertDiv.innerText = message;
+          alertDiv.style.display = "block";
+        }
+      </script>
+       
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
