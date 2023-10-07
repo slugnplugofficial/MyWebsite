@@ -271,12 +271,14 @@ body {
 .AIFH {
   font-size: 3.5rem; 
   margin-bottom:50px ;
-  font: Lastica;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .AIFP {
   font-size: 1.5rem; 
   margin-bottom: 30px; 
+  font-family: "Plus Jakarta Sans", sans-serif;
+
 }
 
 button {

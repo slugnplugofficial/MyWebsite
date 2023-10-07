@@ -710,22 +710,35 @@
    </section>
 
 
-  <section id="Events" style="border-bottom: 1px solid black; height: fit-content;">
+  <section id="Events" style="border-bottom: 1px solid black; min-height: fit-content; background-color: #5e5b6e;">
+   <div class="d-none d-md-block" style="font-size: 3.5vw;">
+   <!-- hidden on mobile  -->
       <div class="AIF">
          <div class="AIF-container">
-           <img src="images/AIFantasia.png" alt="AI Fantasia">
+         <img src="images/AIFantasia.png" alt="AI Fantasia">
          </div>
          <div class="text-container">
-           <h2 class="AIFH">AI FANTASIA</h2>
-           <p class="AIFP">Are you ready to embark on a journey into the exciting world of tech innovation, disruption, and transformation?
+         <h2 class="AIFH">AI FANTASIA</h2>
+         <p class="AIFP">Are you ready to embark on a journey into the exciting world of tech innovation, disruption, and transformation?
             We invite you to join us at "AI Fantasia", where technology enthusiasts, and visionaries come together to explore the limitless possibilities of the digital age.
-           Gain valuable insights, networking galore and join us for the hands on session .</p>
-           <p class="AIFP">Date: 14.10.2023 </p>
-           <p class="AIFP">Time: 10:00 am </p>
-           <p class="AIFP">Venue: BMS 401 .</p>
-           <button onclick="location.href='https://slugnplug.vercel.app/registration'" type="button">Register Here</button>
+         Gain valuable insights, networking galore and join us for the hands on session .</p>
+         <p class="AIFP">Date: 14.10.2023 </p>
+         <p class="AIFP">Time: 10:00 am </p>
+         <p class="AIFP">Venue: BMS 401 .</p>
+         <button  onclick="location.href='https://slugnplug.vercel.app/registration'" type="button">Register Now!!!</button>
          </div>
-       </div>
+      </div>
+   </div>
+   <div class="d-md-none" style="font-size: 15vw; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <!-- hidden on desktop -->
+      <div class="AIF">
+        <div class="AIF-container">
+          <img src="images/AIFantasia.png" alt="AI Fantasia">
+        </div>
+      </div>
+      <button class="mb-3" onclick="location.href='https://slugnplug.vercel.app/registration'" type="button">Register Now!!</button>
+    </div>
+    
 
    </section>
 
@@ -843,16 +856,18 @@
    <script>
       // Get the section element with an id of "Home"
       var section = document.querySelector('#Home');
+      var event = document.querySelector('#Events');
       var coolest = document.querySelector('#collest');
       var email = document.querySelector("#email");
       // Check if the screen width is ≥768px
       if (window.innerWidth >= 768) {
          // Set the min-height of the section element to 500px
          section.style.minHeight = '90vh';
+         
+         event.style.backgroundColor='#ffff'
          coolest.style.backgroundColor = '#ffff';
          email.style.color = "#7E7C6A";
          email.style.fontSize = "1.5625rem";
-
       }
    </script>
 
