@@ -21,6 +21,7 @@ async function appendToGoogleSheet(data) {
   // Construct the values to be appended
   const values = [
     [
+      data.dateTime,
       data.name,
       data.regNo,
       data.year,

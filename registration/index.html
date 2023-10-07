@@ -55,40 +55,46 @@
       document.getElementById("myForm").addEventListener("submit", function(event) {
         const loginButton = document.getElementById("login-button");
         event.preventDefault(); // Prevent the default form submission
+    
         loginButton.innerHTML =
-              '<i class="fas fa-spinner fa-spin" style="color: #ffff;"></i>';
-        
+          '<i class="fas fa-spinner fa-spin" style="color: #ffff;"></i>';
+    
+        // Get the current date and time
+        const currentDate = new Date();
+        const formattedDate = `${currentDate.getDate().toString().padStart(2, '0')}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}-${currentDate.getFullYear()}`;
+        const formattedTime = `${currentDate.getHours().toString().padStart(2, '0')}:${currentDate.getMinutes().toString().padStart(2, '0')}`;
+    
         // Get form data
-          const formDataJson = {
-              name: document.getElementById('name').value,
-              regNo: document.getElementById('regNo').value,
-              year: document.getElementById('year').value,
-              dept: document.getElementById('dept').value,
-              email: document.getElementById('email').value,
-              phone: document.getElementById('phone').value
-          };
-        
+        const formDataJson = {
+          name: document.getElementById('name').value,
+          regNo: document.getElementById('regNo').value,
+          year: document.getElementById('year').value,
+          dept: document.getElementById('dept').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          dateTime: `${formattedDate} ${formattedTime}`
+        };
+    
         // Perform form submission and handle success or error
-        fetch(window.location.origin+"/api/register", {
+        fetch(window.location.origin + "/api/register", {
           method: "POST",
           headers: {
-          'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify(formDataJson)
         })
-        .then(response => response.json())
-        .then(data => {
-          console.log(data.status);
-          console.log(typeof data.status);
-          console.log(typeof String(data.status));
-
-
-          if (String(data.status) === "true") {
-            loginButton.innerHTML =
+          .then(response => response.json())
+          .then(data => {
+            console.log(data.status);
+            console.log(typeof data.status);
+            console.log(typeof String(data.status));
+    
+            if (String(data.status) === "true") {
+              loginButton.innerHTML =
                 '<i class="fa-solid fa-check" style="color: #ffff;"></i>';
-            loginButton.style.backgroundColor = "#198754";          
-            document.getElementById("myForm").reset();
-          } else {
+              loginButton.style.backgroundColor = "#198754";
+              document.getElementById("myForm").reset();
+            } else {
               // If login fails, set an error icon
               loginButton.innerHTML =
                 '<i class="fa-solid fa-xmark" style="color: #ffff;"></i>';
@@ -98,26 +104,24 @@
                 loginButton.classList.remove("shake");
                 loginButton.innerHTML = "Log In";
                 document.getElementById("myForm").reset();
-              }, 1000); // Reset after 1 seconds
-          }
-        })
-        .catch(error => {
-          loginButton.innerHTML =
-                '<i class="fa-solid fa-xmark" style="color: #ffff;"></i>';
-              loginButton.classList.add("shake");
-              setTimeout(() => {
-                // Reset the form and button text after 3 seconds
-                loginButton.classList.remove("shake");
-                loginButton.innerHTML = "Log In";
-                document.getElementById("myForm").reset();
-                loginButton.innerHTML="Submit";
-              }, 1000); // Reset after 1 seconds
-        });
-        
-        // Reset the form after submission
-
+              }, 1000); // Reset after 1 second
+            }
+          })
+          .catch(error => {
+            loginButton.innerHTML =
+              '<i class="fa-solid fa-xmark" style="color: #ffff;"></i>';
+            loginButton.classList.add("shake");
+            setTimeout(() => {
+              // Reset the form and button text after 3 seconds
+              loginButton.classList.remove("shake");
+              loginButton.innerHTML = "Log In";
+              document.getElementById("myForm").reset();
+              loginButton.innerHTML = "Submit";
+            }, 1000); // Reset after 1 second
+          });
       });
     </script>
+    
 
 
   <body>

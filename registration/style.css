@@ -164,5 +164,5 @@ form .user-details .input-box{
   -webkit-animation-duration: 0.1s;
   -webkit-transform-origin: 50% 50%;
   -webkit-animation-timing-function: linear;
-  background-color: #c0392b;
+  background-color: #c0392b !important;
 }
