@@ -1,204 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Fantasia Registration</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      .split-container {
-        height: 100% !important;
-      }
-
-      .left-half,
-      .right-half {
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-
-      .left-half {
-        background-color: #f8f8f8;
-      }
-
-      .right-half {
-        background-color: #fff;
-        padding: 2rem;
-      }
-
-      .form-container {
-        margin: auto;
-      }
-    </style>
-  </head>
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      
+      <meta charset="UTF-8">
+      <title> Registration Form</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    </head>
   <body>
-    <div class="split-container">
-      <div class="row" style="height: 100vh">
-        <div class="d-none d-md-flex col-md-6 left-half">
-          <img
-            src="Poster.png"
-            alt="Image"
-            class="img-fluid mx-auto d-block"
-          />
-        </div>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form id="myForm" >
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Register No.</span>
+              <input type="text" id="regNo" placeholder="Enter your register no." required>
+            </div>
+            <div class="input-box">
+              <span class="details">Year</span>
+              <input type="text" id="year" placeholder="Enter your year" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Department</span>
+              <input type="text" id="dept" placeholder="Enter your department" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" id="email" placeholder="Phone Number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+          <div class="button">
+            <!-- <input type="submit" id="login-button" value="Submit"> -->
+            <button type="submit" id="login-button">Submit</button>
+          </div>
 
-        <div class="col-md-6 right-half">
-            <div class="form-container">
-                <!-- Alert div for displaying success message -->
-                <div id="message-alert" class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
-                  Form submitted successfully!
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <h1 class="text-center">SNP awaits you!!</h1>
-                
-                <form id="myForm">
-                  <div class="form-row justify-content-between">
-                  <div class="form-group col-md-5">
-                    <label for="name">Name</label>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="name"
-                      placeholder=""
-                      required="true"
-                    />
-                  </div>
-                  <div class="form-group col-md-5">
-                    <label for="regNo">Register No.</label>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="regNo"
-                      placeholder=""
-                      required="true"
-                    />
-                  </div>
-                </div>
-                <div class="form-row justify-content-between">
-                  <div class="form-group col-md-5">
-                    <label for="year">Year</label>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="year"
-                      placeholder=""
-                      required="true"
-                    />
-                  </div>
-                  <div class="form-group col-md-5">
-                    <label for="dept">Department</label>
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="dept"
-                      placeholder=""
-                      required="true"
-                    />
-                  </div>
-                </div>
-                <div class="form-row justify-content-between">
-                  <div class="form-group col-md-5">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control form-control-lg"
-                      id="email"
-                      placeholder=""
-                      required="true"
-                    />
-                  </div>
-                  <div class="form-group col-md-5">
-                    <label for="phone">Phone Number</label>
-                    <input
-                      type="tel"
-                      class="form-control form-control-lg"
-                      id="phone"
-                      placeholder=""
-                      required="true"
-                    />
-                  </div>
-                </div>
-                <div class="form-group text-center pt-3">
-                  <button type="submit" class="btn btn-primary btn-lg" style="width: 140px; background-color: black !important;">Submit</button>
-                </div>
-              </form>
-              </div>
-              
-        </div>
+        </form>
       </div>
     </div>
+      <script
+      src="https://kit.fontawesome.com/9d270bec08.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-          event.preventDefault(); // Prevent the default form submission
-          
-          // Get form data
-            const formDataJson = {
-                name: document.getElementById('name').value,
-                regNo: document.getElementById('regNo').value,
-                year: document.getElementById('year').value,
-                dept: document.getElementById('dept').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value
-            };
-          
-          // Perform form submission and handle success or error
-          fetch(window.location.origin+"/api/register", {
-            method: "POST",
-            headers: {
-            'Content-Type': 'application/json'
-             },
-             body: JSON.stringify(formDataJson)
-          })
-          .then(response => response.json())
-          .then(data => {
-            console.log(data.status);
-            console.log(typeof data.status);
-            console.log(typeof String(data.status));
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        const loginButton = document.getElementById("login-button");
+        event.preventDefault(); // Prevent the default form submission
+        loginButton.innerHTML =
+              '<i class="fas fa-spinner fa-spin" style="color: #ffff;"></i>';
+        
+        // Get form data
+          const formDataJson = {
+              name: document.getElementById('name').value,
+              regNo: document.getElementById('regNo').value,
+              year: document.getElementById('year').value,
+              dept: document.getElementById('dept').value,
+              email: document.getElementById('email').value,
+              phone: document.getElementById('phone').value
+          };
+        
+        // Perform form submission and handle success or error
+        fetch(window.location.origin+"/api/register", {
+          method: "POST",
+          headers: {
+          'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formDataJson)
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data.status);
+          console.log(typeof data.status);
+          console.log(typeof String(data.status));
 
 
-            if (String(data.status) === "true") {
-              showMessageAlert("success", "Form submitted successfully!");
-              document.getElementById("myForm").reset();
-              setTimeout(function() {
-                document.getElementById("message-alert").style.display = "none"; // Hide the message alert after 3 seconds
-              }, 3000);
-            } else {
-              showMessageAlert("danger", "Form submission failed. Please try again.");
-              document.getElementById("myForm").reset();
-            }
-          })
-          .catch(error => {
-            showMessageAlert("danger", "An error occurred. Please try again later.");
+          if (String(data.status) === "true") {
+            loginButton.innerHTML =
+                '<i class="fa-solid fa-check" style="color: #ffff;"></i>';
+            loginButton.style.backgroundColor = "#198754";          
             document.getElementById("myForm").reset();
-          });
-          
-          // Reset the form after submission
-
+          } else {
+              // If login fails, set an error icon
+              loginButton.innerHTML =
+                '<i class="fa-solid fa-xmark" style="color: #ffff;"></i>';
+              loginButton.classList.add("shake");
+              setTimeout(() => {
+                // Reset the form and button text after 3 seconds
+                loginButton.classList.remove("shake");
+                loginButton.innerHTML = "Log In";
+                document.getElementById("myForm").reset();
+              }, 1000); // Reset after 1 seconds
+          }
+        })
+        .catch(error => {
+          loginButton.innerHTML =
+                '<i class="fa-solid fa-xmark" style="color: #ffff;"></i>';
+              loginButton.classList.add("shake");
+              setTimeout(() => {
+                // Reset the form and button text after 3 seconds
+                loginButton.classList.remove("shake");
+                loginButton.innerHTML = "Log In";
+                document.getElementById("myForm").reset();
+              }, 1000); // Reset after 1 seconds
         });
-      
-        function showMessageAlert(type, message) {
-          const alertDiv = document.getElementById("message-alert");
-          alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
-          alertDiv.innerText = message;
-          alertDiv.style.display = "block";
-        }
-      </script>
-       
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-</html>
+        
+        // Reset the form after submission
+
+      });
+    </script>
+
+
+  <body>
+  
+  </html>
